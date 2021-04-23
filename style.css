@@ -17,6 +17,7 @@
   --main-border-radius: 5px;
   --color-red-border: rgba(108, 42, 43, 1.0);
   --input-color-bg:rgba(7, 10, 16, 1.0);
+  --title-color-bg: rgba(22, 27, 35, 1.0);
 }
 
 body {
@@ -40,6 +41,7 @@ input {
   border: 1px solid var(--main-color-border);
   background-color: var(--input-color-bg);
   border-radius: var(--main-border-radius);
+  margin: 3px;
   padding: 0 10px;
   height: 30px;
   width: 400px;
@@ -63,6 +65,7 @@ button {
   padding: 0 16px;
   color: var(--main-color-font-primary);
   font-weight: 500;
+  min-width: 70px
 }
 
 button:hover {
@@ -107,4 +110,27 @@ h2 {
 .actions {
   display: flex;
   justify-content: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.title {
+  background-color: var(--title-color-bg);
+  padding: 22px 16px;
+  border-bottom: 1px solid var(--main-color-border)
+}
+
+.computer-answers {
+  margin: 30px auto;
+  border: 1px solid var(--main-color-border);
+  border-radius: var(--main-border-radius);
+  width: 60vw;
+}
+
+.computer-answers > p {
+  padding: 8px;
+  font-size: .95rem;
 }
